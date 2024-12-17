@@ -1,0 +1,5 @@
+bases covered
+ next steps
+ add exception handler
+ add html responses
+ add apidocs

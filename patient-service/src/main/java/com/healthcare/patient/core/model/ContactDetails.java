@@ -1,6 +1,5 @@
 package com.healthcare.patient.core.model;
 
-
 import lombok.*;
 
 @NoArgsConstructor
@@ -8,10 +7,7 @@ import lombok.*;
 @Getter
 @Setter
 @EqualsAndHashCode
-public class Patient {
-
-    private String id;
-    private String name;
-    private int age;
-    private ContactDetails contactDetails;
+public class ContactDetails {
+    private String email;
+    private String phoneNumber;
 }

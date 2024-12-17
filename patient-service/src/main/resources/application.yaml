@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: patient-service
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:patientdb
+    username: sa
+    password: password
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+  #limit auto exposed rest endpoints of data jpa to only those with @Repository
+  data:
+    rest:
+      detection-strategy: annotated
